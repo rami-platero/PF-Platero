@@ -214,9 +214,20 @@ nav ul .cart-li img {
   margin-bottom: 2rem;
 }
 
+.products-categories .products-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .products-categories .products-wrapper .item {
   cursor: pointer;
-  display: inline-block;
+  transition: 0.2s ease-in-out;
+
+  &:hover >img{
+    background-color: #8490ff;
+    transition: 0.2s ease-in-out;
+  }
 }
 
 .products-categories .products-wrapper .item img {
