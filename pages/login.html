@@ -28,15 +28,21 @@
     <main class="login">
         <h1>Login</h1>
         <form class="normal-login">
-            <label for="username">Username</label>
-            <input type="text" name="username">
-            <label for="password">Password</label>
-            <input type="password" name="password">
+            <div class="input-box">
+                <label for="username">Username</label>
+                <input type="text" name="username">
+            </div>
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" name="password">
+            </div>
             <button type="submit">Log in</button>
         </form>
         <form class="login-with-google">
-            <h3>Or continue with</h3>
-            <button></button>
+            <div class="text-divider">
+                or
+            </div>
+            <button><img src="../assets/img/google-icon.png" alt="google-icon">Continue with Google</button>
         </form>
     </main>
     <footer>
