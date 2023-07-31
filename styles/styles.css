@@ -13,6 +13,12 @@ nav {
   top: 1rem;
   width: 100%;
   z-index: 9;
+
+  .hamburger-btn{
+    display: none;
+    background-color: transparent;
+    border: none;
+  }
 }
 
 nav ul {
@@ -54,6 +60,25 @@ nav ul .cart-li {
 nav ul .cart-li img {
   margin-right: 0.3rem;
   width: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  nav{
+    padding: .5rem;
+    top: 0;
+    background-color: #6372fc;
+
+    .hamburger-btn {
+      display: flex;
+      .material-icons{
+        font-size: 30px;
+      }
+    }
+    
+    >ul{
+      display: none;
+    }
+  }
 }
 /**/
 
