@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap");
 
+/*FIXING BOOTSTRAP DEFAULT STYLES*/
+ul{
+  padding-left: 0rem !important;
+}
+/**/
+
 * {
   margin: 0;
   padding: 0;
@@ -275,132 +281,128 @@ nav ul .cart-li img {
 
 /*PRODUCTS PAGE*/
 
+.carousel-item{
+  width: 100%;
+  height: 500px;
+}
+
 .products {
   
-
-  .featured-container {
-    /* > img {
-      width: 100%;
-    } */
-    .carousel-item{
-      width: 100%;
-      height: 520px;
-      object-fit: cover;
-    }
-  }
-
-  .products-filters {
-    padding: 1rem;
-    margin-top: 2rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-    
-    > h2 {
-      font-size: 2.5rem;
-    }
-    > form {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-
-      @media screen and (max-width: 768px) {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      > select {
-        color: #838383;
-        border: 2px solid #c2c2c2;
-        font-weight: 500;
-        cursor: pointer;
-        padding: 0.5rem 1rem;
-        outline: none;
-        transition: 0.2s ease-in-out;
-
-        /* &:hover{
-          color: white;
-          background-color: #8490ff;
-          transition: 0.2s ease-in-out;
-        } */
-      }
-
-      .search-input-box {
-        border: 2px solid #c2c2c2;
-        position: relative;
-        width: 100%;
-        max-width: 800px;
-        padding: 1rem;
-
-        > input {
-          padding-left: 2rem;
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          top: 0;
-          left: 0;
-          border: none;
-          outline: none;
-          font-weight: 500;
-          color: black;
-          background-color: transparent;
-        }
-
-        > i {
-          top: 0.4rem;
-          left: 0.3rem;
-          position: absolute;
-          font-size: 1.3rem;
-        }
-      }
-
-      > input {
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
-        outline: none;
-        max-width: 800px;
-        width: 100%;
-        transition: 0.2s ease-in-out;
-
-        &::placeholder {
-          color: #c4c4c4;
-        }
-
-        &:focus {
-          transition: 0.2s ease-in-out;
-          border: 2px solid #8490ff;
-        }
-      }
-
-      > button {
-        cursor: pointer;
-        padding: 0.5rem 1rem;
-        background-color: white;
-        border: 2px solid #8490ff;
-        color: #8490ff;
-        font-weight: 500;
-        transition: 0.2s ease-in-out;
-        min-width: 120px;
-
-        &:hover {
-          background-color: #8490ff;
-          color: white;
-          transition: 0.2s ease-in-out;
-        }
-      }
-    }
-  }
-
   .products-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+
+    >h1{
+      margin-top: 2rem;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    .products-filters {
+      padding: 1rem;
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+      
+      > form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+  
+        @media screen and (max-width: 768px) {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+  
+        > select {
+          color: #838383;
+          border: 2px solid #c2c2c2;
+          font-weight: 500;
+          cursor: pointer;
+          padding: 0.5rem 1rem;
+          outline: none;
+          transition: 0.2s ease-in-out;
+  
+          /* &:hover{
+            color: white;
+            background-color: #8490ff;
+            transition: 0.2s ease-in-out;
+          } */
+        }
+  
+        .search-input-box {
+          border: 2px solid #c2c2c2;
+          position: relative;
+          width: 100%;
+          max-width: 800px;
+          padding: 1rem;
+  
+          > input {
+            padding-left: 2rem;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            color: black;
+            background-color: transparent;
+          }
+  
+          > i {
+            top: 0.4rem;
+            left: 0.3rem;
+            position: absolute;
+            font-size: 1.3rem;
+          }
+        }
+  
+        > input {
+          border-radius: 5px;
+          padding: 0.5rem 1rem;
+          outline: none;
+          max-width: 800px;
+          width: 100%;
+          transition: 0.2s ease-in-out;
+  
+          &::placeholder {
+            color: #c4c4c4;
+          }
+  
+          &:focus {
+            transition: 0.2s ease-in-out;
+            border: 2px solid #8490ff;
+          }
+        }
+  
+        > button {
+          cursor: pointer;
+          padding: 0.5rem 1rem;
+          background-color: white;
+          border: 2px solid #8490ff;
+          color: #8490ff;
+          font-weight: 500;
+          transition: 0.2s ease-in-out;
+          min-width: 120px;
+  
+          &:hover {
+            background-color: #8490ff;
+            color: white;
+            transition: 0.2s ease-in-out;
+          }
+        }
+      }
+    }
 
     .products-wrapper {
       max-width: 1600px;
@@ -420,7 +422,7 @@ nav ul .cart-li img {
         width: 100%;
         max-width: 350px;
         margin: 0 auto;
-        box-shadow: rgba(0, 0, 0, 0.116) 0px 10px 20px 0px;
+        box-shadow: rgba(0, 0, 0, 0.116) 0px 10px 20px 0px !important;
         border-bottom: 4px solid #8490ff;
 
         .item-img {
@@ -432,15 +434,18 @@ nav ul .cart-li img {
         .name {
           margin: 0.5rem 0rem;
           font-weight: 400;
+          font-size: 1rem;
         }
 
         .price {
           margin: 1rem 0rem;
           font-weight: 600;
+          font-size: 1rem;
           color: rgb(32, 32, 32);
         }
 
         > button {
+          font-size: .9rem;
           cursor: pointer;
           padding: 0.5rem 1rem;
           color: #8490ff;
