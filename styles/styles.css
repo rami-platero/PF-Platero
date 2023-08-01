@@ -281,9 +281,16 @@ nav ul .cart-li img {
 
 /*PRODUCTS PAGE*/
 
-.carousel-item{
+.carousel-item img{
   width: 100%;
-  height: 500px;
+  height: 650px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1300px) {
+  .carousel-item{
+    height: 300px;
+  }
 }
 
 .products {
