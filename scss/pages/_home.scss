@@ -8,4 +8,12 @@ body#home{
         margin-top: 2rem;
         text-align: center;
     }
+
+    main .featured-products{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
