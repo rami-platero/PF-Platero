@@ -1,73 +1,48 @@
 .more-products-btn {
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  color: #8490ff;
-  background-color: white;
-  border: 2px solid #8490ff;
-  font-weight: 600;
-  transition: 0.2s ease-in-out;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  @include button-style-white($lightblue);
   width: fit-content;
   text-decoration: none;
   margin: 0 auto;
-
-  > i {
-    font-size: 15px;
-  }
-
-  &:hover {
-    color: rgb(255, 255, 255);
-    background-color: #8490ff;
-    transition: 0.2s ease-in-out;
-  }
-
-  &:hover i {
-    color: rgb(255, 255, 255);
-    transition: 0.2s ease-in-out;
-  }
 }
 
+.login-with-google {
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    color: black;
 
-.login-with-google{
-    button{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-      background-color: white;
-      color: black;
-
-      &:hover{
-        background-color: rgb(198, 206, 255);
-      }
-
-      >img{
-        max-width: 24px;
-      }
+    &:hover {
+      background-color: rgb(198, 206, 255);
     }
 
-    .text-divider {
-      display: flex;
-      align-items: center;
-      --text-divider-gap: 1rem;
-
-      &::before, &::after{
-        content: '';
-        height: 1px;
-        background-color: silver;
-        flex-grow: 1;
-      }
-
-      &::before{
-        margin-right: var(--text-divider-gap);
-      }
-
-      &::after{
-        margin-left: var(--text-divider-gap);
-
-      }
+    > img {
+      max-width: 24px;
     }
   }
+
+  .text-divider {
+    display: flex;
+    align-items: center;
+    --text-divider-gap: 1rem;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      background-color: silver;
+      flex-grow: 1;
+    }
+
+    &::before {
+      margin-right: var(--text-divider-gap);
+    }
+
+    &::after {
+      margin-left: var(--text-divider-gap);
+    }
+  }
+}

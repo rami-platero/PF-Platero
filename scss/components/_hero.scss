@@ -25,21 +25,8 @@
     }
 
     a {
-      font-size: 0.9rem;
-      cursor: pointer;
-      padding: 0.5rem 1rem;
-      color: #8490ff;
-      background: none;
-      border: 2px solid #8490ff;
-      font-weight: 600;
+      @include button-style-transparent($lightblue,black);
       text-decoration: none;
-      transition: 0.2s ease-in-out;
-
-      &:hover {
-        color: black;
-        background-color: #8490ff;
-        transition: 0.2s ease-in-out;
-      }
     }
   }
 }

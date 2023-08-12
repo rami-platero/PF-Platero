@@ -22,7 +22,7 @@
 
       > select {
         color: #838383;
-        border: 2px solid #c2c2c2;
+        border: 2px solid $light-gray;
         font-weight: 500;
         cursor: pointer;
         padding: 0.5rem 1rem;
@@ -37,7 +37,7 @@
       }
 
       .search-input-box {
-        border: 2px solid #c2c2c2;
+        border: 2px solid $light-gray;
         position: relative;
         width: 100%;
         max-width: 800px;
@@ -79,25 +79,13 @@
 
         &:focus {
           transition: 0.2s ease-in-out;
-          border: 2px solid #8490ff;
+          border: 2px solid $lightblue;
         }
       }
 
       > button {
-        cursor: pointer;
-        padding: 0.5rem 1rem;
-        background-color: white;
-        border: 2px solid #8490ff;
-        color: #8490ff;
-        font-weight: 500;
-        transition: 0.2s ease-in-out;
+        @include button-style-white($lightblue);
         min-width: 120px;
-
-        &:hover {
-          background-color: #8490ff;
-          color: white;
-          transition: 0.2s ease-in-out;
-        }
       }
     }
   }

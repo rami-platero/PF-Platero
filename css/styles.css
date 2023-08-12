@@ -98,7 +98,7 @@ body#home .products-wrapper .item {
   max-width: 350px;
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.116) 0px 10px 20px 0px !important;
-  border-bottom: 4px solid #8490ff;
+  border-bottom: 4px solid #5965d4;
 }
 body#home .products-wrapper .item .item-img {
   max-width: 250px;
@@ -117,7 +117,6 @@ body#home .products-wrapper .item .price {
   color: rgb(32, 32, 32);
 }
 body#home .products-wrapper .item > button {
-  font-size: 0.9rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
   color: #8490ff;
@@ -129,13 +128,13 @@ body#home .products-wrapper .item > button {
   align-items: center;
   gap: 0.5rem;
 }
-body#home .products-wrapper .item > button > i {
-  font-size: 15px;
-}
 body#home .products-wrapper .item > button:hover {
   color: rgb(255, 255, 255);
   background-color: #8490ff;
   transition: 0.2s ease-in-out;
+}
+body#home .products-wrapper .item > button > i {
+  font-size: 15px;
 }
 body#home .products-wrapper .item > button:hover i {
   color: rgb(255, 255, 255);
@@ -177,23 +176,13 @@ body#home .more-products-btn {
   border: 2px solid #8490ff;
   font-weight: 600;
   transition: 0.2s ease-in-out;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   width: fit-content;
   text-decoration: none;
   margin: 0 auto;
 }
-body#home .more-products-btn > i {
-  font-size: 15px;
-}
 body#home .more-products-btn:hover {
   color: rgb(255, 255, 255);
   background-color: #8490ff;
-  transition: 0.2s ease-in-out;
-}
-body#home .more-products-btn:hover i {
-  color: rgb(255, 255, 255);
   transition: 0.2s ease-in-out;
 }
 body#home .login-with-google button {
@@ -253,15 +242,15 @@ body#home .hero .content p {
   margin-bottom: 2rem;
 }
 body#home .hero .content a {
-  font-size: 0.9rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
   color: #8490ff;
-  background: none;
+  background-color: transparent;
   border: 2px solid #8490ff;
   font-weight: 600;
-  text-decoration: none;
   transition: 0.2s ease-in-out;
+  margin: 0 auto;
+  text-decoration: none;
 }
 body#home .hero .content a:hover {
   color: black;
@@ -271,6 +260,13 @@ body#home .hero .content a:hover {
 body#home main .featured-products h2 {
   margin-top: 2rem;
   text-align: center;
+}
+body#home main .featured-products {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #login main {
@@ -334,23 +330,13 @@ body#home main .featured-products h2 {
   border: 2px solid #8490ff;
   font-weight: 600;
   transition: 0.2s ease-in-out;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   width: fit-content;
   text-decoration: none;
   margin: 0 auto;
 }
-#login main .more-products-btn > i {
-  font-size: 15px;
-}
 #login main .more-products-btn:hover {
   color: rgb(255, 255, 255);
   background-color: #8490ff;
-  transition: 0.2s ease-in-out;
-}
-#login main .more-products-btn:hover i {
-  color: rgb(255, 255, 255);
   transition: 0.2s ease-in-out;
 }
 #login main .login-with-google button {
@@ -439,23 +425,13 @@ body#home main .featured-products h2 {
   border: 2px solid #8490ff;
   font-weight: 600;
   transition: 0.2s ease-in-out;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   width: fit-content;
   text-decoration: none;
   margin: 0 auto;
 }
-#register .more-products-btn > i {
-  font-size: 15px;
-}
 #register .more-products-btn:hover {
   color: rgb(255, 255, 255);
   background-color: #8490ff;
-  transition: 0.2s ease-in-out;
-}
-#register .more-products-btn:hover i {
-  color: rgb(255, 255, 255);
   transition: 0.2s ease-in-out;
 }
 #register .login-with-google button {
@@ -592,16 +568,16 @@ body#products .products-filters > form > input:focus {
 body#products .products-filters > form > button {
   cursor: pointer;
   padding: 0.5rem 1rem;
+  color: #8490ff;
   background-color: white;
   border: 2px solid #8490ff;
-  color: #8490ff;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.2s ease-in-out;
   min-width: 120px;
 }
 body#products .products-filters > form > button:hover {
+  color: rgb(255, 255, 255);
   background-color: #8490ff;
-  color: white;
   transition: 0.2s ease-in-out;
 }
 body#products .products-wrapper {
@@ -623,7 +599,7 @@ body#products .products-wrapper .item {
   max-width: 350px;
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.116) 0px 10px 20px 0px !important;
-  border-bottom: 4px solid #8490ff;
+  border-bottom: 4px solid #5965d4;
 }
 body#products .products-wrapper .item .item-img {
   max-width: 250px;
@@ -642,7 +618,6 @@ body#products .products-wrapper .item .price {
   color: rgb(32, 32, 32);
 }
 body#products .products-wrapper .item > button {
-  font-size: 0.9rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
   color: #8490ff;
@@ -654,13 +629,13 @@ body#products .products-wrapper .item > button {
   align-items: center;
   gap: 0.5rem;
 }
-body#products .products-wrapper .item > button > i {
-  font-size: 15px;
-}
 body#products .products-wrapper .item > button:hover {
   color: rgb(255, 255, 255);
   background-color: #8490ff;
   transition: 0.2s ease-in-out;
+}
+body#products .products-wrapper .item > button > i {
+  font-size: 15px;
 }
 body#products .products-wrapper .item > button:hover i {
   color: rgb(255, 255, 255);
