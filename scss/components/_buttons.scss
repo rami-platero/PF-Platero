@@ -28,3 +28,46 @@
     transition: 0.2s ease-in-out;
   }
 }
+
+
+.login-with-google{
+    button{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      background-color: white;
+      color: black;
+
+      &:hover{
+        background-color: rgb(198, 206, 255);
+      }
+
+      >img{
+        max-width: 24px;
+      }
+    }
+
+    .text-divider {
+      display: flex;
+      align-items: center;
+      --text-divider-gap: 1rem;
+
+      &::before, &::after{
+        content: '';
+        height: 1px;
+        background-color: silver;
+        flex-grow: 1;
+      }
+
+      &::before{
+        margin-right: var(--text-divider-gap);
+      }
+
+      &::after{
+        margin-left: var(--text-divider-gap);
+
+      }
+    }
+  }
