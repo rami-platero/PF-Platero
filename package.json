@@ -1,0 +1,23 @@
+{
+  "name": "gaming-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rami-platero/PreEntrega2-Platero.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rami-platero/PreEntrega2-Platero/issues"
+  },
+  "homepage": "https://github.com/rami-platero/PreEntrega2-Platero#readme",
+  "dependencies": {
+    "sass": "^1.65.1"
+  }
+}
