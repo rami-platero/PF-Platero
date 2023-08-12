@@ -196,6 +196,38 @@ body#home .more-products-btn:hover i {
   color: rgb(255, 255, 255);
   transition: 0.2s ease-in-out;
 }
+body#home .login-with-google button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  color: black;
+}
+body#home .login-with-google button:hover {
+  background-color: rgb(198, 206, 255);
+}
+body#home .login-with-google button > img {
+  max-width: 24px;
+}
+body#home .login-with-google .text-divider {
+  display: flex;
+  align-items: center;
+  --text-divider-gap: 1rem;
+}
+body#home .login-with-google .text-divider::before, body#home .login-with-google .text-divider::after {
+  content: "";
+  height: 1px;
+  background-color: silver;
+  flex-grow: 1;
+}
+body#home .login-with-google .text-divider::before {
+  margin-right: var(--text-divider-gap);
+}
+body#home .login-with-google .text-divider::after {
+  margin-left: var(--text-divider-gap);
+}
 body#home .hero {
   color: white;
   background-image: url(../assets/img/hero-img.png);
@@ -241,7 +273,7 @@ body#home main .featured-products h2 {
   text-align: center;
 }
 
-.login {
+#login main {
   padding: 1rem;
   height: 85vh;
   display: flex;
@@ -250,15 +282,16 @@ body#home main .featured-products h2 {
   flex-direction: column;
   gap: 2rem;
   background: linear-gradient(180deg, rgb(217, 215, 255) 0%, rgb(255, 255, 255) 100%);
+  /*LOGIN AND REGISTER FORM*/
 }
-.login > form {
+#login main form {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 450px;
   gap: 1.5rem;
 }
-.login > form > button {
+#login main form button {
   color: white;
   cursor: pointer;
   font-size: 1rem;
@@ -268,16 +301,14 @@ body#home main .featured-products h2 {
   padding: 0.5rem;
   transition: 0.2s ease-in-out;
 }
-.login > form > button:hover {
+#login main form button:hover {
   background-color: #6372fc;
   transition: 0.2s ease-in-out;
 }
-.login > form .input-box > label {
+#login main form .input-box > label {
   font-size: 0.8rem;
 }
-.login > form .input-box > input {
-  /* border: 2px solid #000000;
-  border-radius: 5px; */
+#login main form .input-box input {
   border: 2px solid transparent;
   padding: 0.5rem 1rem;
   outline: none;
@@ -287,15 +318,42 @@ body#home main .featured-products h2 {
   transition: 0.2s ease-in-out;
   box-shadow: rgba(100, 100, 111, 0.144) 0px 2px 10px 0px;
 }
-.login > form .input-box > input::placeholder {
+#login main form .input-box input::placeholder {
   color: #c4c4c4;
 }
-.login > form .input-box > input:focus {
+#login main form .input-box input:focus {
   transition: 0.2s ease-in-out;
   border: 2px solid #8490ff;
   background-color: rgba(183, 193, 250, 0.185);
 }
-.login .login-with-google > button {
+#login main .more-products-btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: #8490ff;
+  background-color: white;
+  border: 2px solid #8490ff;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  text-decoration: none;
+  margin: 0 auto;
+}
+#login main .more-products-btn > i {
+  font-size: 15px;
+}
+#login main .more-products-btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: #8490ff;
+  transition: 0.2s ease-in-out;
+}
+#login main .more-products-btn:hover i {
+  color: rgb(255, 255, 255);
+  transition: 0.2s ease-in-out;
+}
+#login main .login-with-google button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -304,28 +362,143 @@ body#home main .featured-products h2 {
   background-color: white;
   color: black;
 }
-.login .login-with-google > button:hover {
+#login main .login-with-google button:hover {
   background-color: rgb(198, 206, 255);
 }
-.login .login-with-google > button > img {
+#login main .login-with-google button > img {
   max-width: 24px;
 }
-.login .login-with-google .text-divider {
+#login main .login-with-google .text-divider {
   display: flex;
   align-items: center;
   --text-divider-gap: 1rem;
 }
-.login .login-with-google .text-divider::before, .login .login-with-google .text-divider::after {
+#login main .login-with-google .text-divider::before, #login main .login-with-google .text-divider::after {
   content: "";
   height: 1px;
   background-color: silver;
   flex-grow: 1;
 }
-.login .login-with-google .text-divider::before {
+#login main .login-with-google .text-divider::before {
   margin-right: var(--text-divider-gap);
 }
-.login .login-with-google .text-divider::after {
+#login main .login-with-google .text-divider::after {
   margin-left: var(--text-divider-gap);
+}
+
+#register {
+  /*LOGIN AND REGISTER FORM*/
+}
+#register form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+  gap: 1.5rem;
+}
+#register form button {
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  background-color: #8490ff;
+  padding: 0.5rem;
+  transition: 0.2s ease-in-out;
+}
+#register form button:hover {
+  background-color: #6372fc;
+  transition: 0.2s ease-in-out;
+}
+#register form .input-box > label {
+  font-size: 0.8rem;
+}
+#register form .input-box input {
+  border: 2px solid transparent;
+  padding: 0.5rem 1rem;
+  outline: none;
+  max-width: 800px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.336);
+  transition: 0.2s ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.144) 0px 2px 10px 0px;
+}
+#register form .input-box input::placeholder {
+  color: #c4c4c4;
+}
+#register form .input-box input:focus {
+  transition: 0.2s ease-in-out;
+  border: 2px solid #8490ff;
+  background-color: rgba(183, 193, 250, 0.185);
+}
+#register .more-products-btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: #8490ff;
+  background-color: white;
+  border: 2px solid #8490ff;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  text-decoration: none;
+  margin: 0 auto;
+}
+#register .more-products-btn > i {
+  font-size: 15px;
+}
+#register .more-products-btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: #8490ff;
+  transition: 0.2s ease-in-out;
+}
+#register .more-products-btn:hover i {
+  color: rgb(255, 255, 255);
+  transition: 0.2s ease-in-out;
+}
+#register .login-with-google button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  color: black;
+}
+#register .login-with-google button:hover {
+  background-color: rgb(198, 206, 255);
+}
+#register .login-with-google button > img {
+  max-width: 24px;
+}
+#register .login-with-google .text-divider {
+  display: flex;
+  align-items: center;
+  --text-divider-gap: 1rem;
+}
+#register .login-with-google .text-divider::before, #register .login-with-google .text-divider::after {
+  content: "";
+  height: 1px;
+  background-color: silver;
+  flex-grow: 1;
+}
+#register .login-with-google .text-divider::before {
+  margin-right: var(--text-divider-gap);
+}
+#register .login-with-google .text-divider::after {
+  margin-left: var(--text-divider-gap);
+}
+#register main {
+  padding: 1rem;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: linear-gradient(180deg, rgb(217, 215, 255) 0%, rgb(255, 255, 255) 100%);
 }
 
 body#products .carousel-item img {
