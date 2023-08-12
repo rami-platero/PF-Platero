@@ -14,7 +14,7 @@ ul{
 }
 
 /*Navigation*/
-nav {
+.desktop-navbar {
   position: fixed;
   top: 1rem;
   width: 100%;
@@ -27,7 +27,7 @@ nav {
   }
 }
 
-nav ul {
+.desktop-navbar ul {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -41,12 +41,12 @@ nav ul {
   list-style: none;
 }
 
-nav ul li {
+.desktop-navbar ul li {
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
 }
 
-nav ul li a {
+.desktop-navbar ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   transition: 0.2s ease-in-out;
@@ -57,34 +57,36 @@ nav ul li a {
   }
 }
 
-nav ul .cart-li {
+.desktop-navbar ul .cart-li {
   color: black;
   font-weight: 600;
   background-color: rgb(255, 255, 255);
 }
 
-nav ul .cart-li img {
+.desktop-navbar ul .cart-li img {
   margin-right: 0.3rem;
   width: 15px;
 }
 
-@media screen and (max-width: 768px) {
-  nav{
-    padding: .5rem;
-    top: 0;
-    background-color: #6372fc;
+.hamburger-navbar{
+  display: none;
+}
 
-    .hamburger-btn {
-      display: flex;
-      .material-icons{
-        font-size: 30px;
-      }
-    }
-    
-    >ul{
-      display: none;
+@media screen and (max-width: 768px) {
+
+  .desktop-navbar{
+    display: none;
+  }
+
+  .hamburger-navbar{
+    display: flex;
+    flex-direction: column;
+
+    >nav{
+      top: 0;
     }
   }
+
 }
 /**/
 
@@ -182,6 +184,7 @@ nav ul .cart-li img {
 .featured-products .products-wrapper .item .name {
   margin: 0.5rem 0rem;
   font-weight: 400;
+  font-size: 1.2rem;
 }
 
 .featured-products .products-wrapper .item .price {
@@ -258,25 +261,23 @@ nav ul .cart-li img {
   flex-wrap: wrap;
 }
 
-.products-categories .products-wrapper .item {
+
+.products-categories .products-wrapper .item img {
   cursor: pointer;
   transition: 0.2s ease-in-out;
-
-  &:hover > img {
+  max-width: 200px;
+  border: 3px solid #8490ff;
+  margin: 0rem 1rem;
+  &:hover {
     background-color: #8490ff;
     transition: 0.2s ease-in-out;
   }
 }
 
-.products-categories .products-wrapper .item img {
-  max-width: 200px;
-  border: 3px solid #8490ff;
-  margin: 0rem 1rem;
-}
-
 .products-categories .products-wrapper .item h3 {
   margin-top: 1rem;
   margin-bottom: 4rem;
+  font-size: 1.2rem;
 }
 
 /*PRODUCTS PAGE*/
