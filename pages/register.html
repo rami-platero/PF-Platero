@@ -11,7 +11,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
-<body>
+<body id="register">
     <header>
         <nav class="desktop-navbar">
             <ul>
@@ -49,18 +49,28 @@
         </div>
     </header>
     <main>
-        <section>
             <h1>Register</h1>
-            <form>
-                <label for="username">Username</label>
-                <input type="text" name="username">
-                <label for="email">Email address</label>
-                <input type="text" name="email">
-                <label for="password">Password</label>
-                <input type="password" name="password">
-                <button type="submit">Register</button>
+            <form class="normal-login">
+                <div class="input-box">
+                    <label for="username">Username</label>
+                    <input type="text" name="username">
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" name="password">
+                </div>
+                <button type="submit">Log in</button>
             </form>
-        </section>
+            <form class="login-with-google">
+                <div class="text-divider">
+                    or
+                </div>
+                <button><img src="../assets/img/google-icon.png" alt="google-icon">Continue with Google</button>
+            </form>
     </main>
     <footer>
         <hr>
