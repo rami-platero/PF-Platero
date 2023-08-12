@@ -1,0 +1,10 @@
+body#products{
+    @import '../components/carousel';
+    @import '../components/products-filters';
+    @import '../components/featured-products';
+
+    main .products-container h1{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
