@@ -1,20 +1,21 @@
-@import 'navigation';
-@import 'reset';
-@import 'hero';
-@import 'categories';
-@import 'carousel';
-@import 'login';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+
+@import 'components/navigation';
+@import 'components/footer';
+
+/* @import 'pages/home/categories';
+@import 'pages/home/featured-products';
+@import 'pages/home/hero'; */
+@import 'pages/home';
+@import 'pages/login/login';
+@import 'pages/products/carousel';
+
 
 /*FONTS*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap");
-
-
-/*featured products*/
-
-/**/
-
-/*PRODUCTS PAGE*/
-
 
 
 .products {

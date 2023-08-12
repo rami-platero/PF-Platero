@@ -1,49 +1,22 @@
-.featured-products {
-  margin-top: 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-
-  h2 {
-    margin-bottom: 2rem;
-  }
-
-  .more-products {
-    font-size: 0.9rem;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    color: #8490ff;
-    background-color: white;
-    border: 2px solid #8490ff;
-    font-weight: 600;
-    text-decoration: none;
-    width: fit-content;
-    transition: 0.2s ease-in-out;
-  
-    &:hover {
-      color: rgb(255, 255, 255);
-      background-color: #8490ff;
-      transition: 0.2s ease-in-out;
-    }
-  }
-
-  .products-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.products-wrapper {
+    max-width: 1600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: 0 auto;
+    grid-gap: 4rem;
+    padding: 1rem;
 
     .item {
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 1rem;
+      width: 100%;
       max-width: 350px;
-      margin: 0.5rem;
-      box-shadow: rgba(0, 0, 0, 0.116) 0px 10px 20px 0px;
+      margin: 0 auto;
+      box-shadow: rgba(0, 0, 0, 0.116) 0px 10px 20px 0px !important;
       border-bottom: 4px solid #8490ff;
 
       .item-img {
@@ -55,19 +28,18 @@
       .name {
         margin: 0.5rem 0rem;
         font-weight: 400;
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
+
       .price {
         margin: 1rem 0rem;
         font-weight: 600;
+        font-size: 1rem;
         color: rgb(32, 32, 32);
       }
-      .shopping-cart-icon {
-        width: 15px;
-        margin-right: 0.5rem;
-      }
 
-      button {
+      > button {
+        font-size: .9rem;
         cursor: pointer;
         padding: 0.5rem 1rem;
         color: #8490ff;
@@ -78,17 +50,16 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-
         > i {
           font-size: 15px;
         }
-
+      
         &:hover {
           color: rgb(255, 255, 255);
           background-color: #8490ff;
           transition: 0.2s ease-in-out;
         }
-
+      
         &:hover i {
           color: rgb(255, 255, 255);
           transition: 0.2s ease-in-out;
@@ -96,4 +67,3 @@
       }
     }
   }
-}

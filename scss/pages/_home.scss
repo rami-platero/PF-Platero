@@ -1,0 +1,11 @@
+body#home{
+    @import '../components/featured-products';
+    @import '../components/categories';
+    @import '../components/buttons';
+    @import '../components/hero';
+
+    main .featured-products h2{
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
