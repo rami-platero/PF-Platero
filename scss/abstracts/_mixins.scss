@@ -1,0 +1,34 @@
+@mixin button-style-white($color) {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: $color;
+  background-color: white;
+  border: 2px solid $color;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: rgb(255, 255, 255);
+    background-color: $color;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+@mixin button-style-transparent($color,$hover-color) {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: $color;
+    background-color: transparent;
+    border: 2px solid $color;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    margin: 0 auto;
+  
+    &:hover {
+      color: $hover-color;
+      background-color: $color;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+
