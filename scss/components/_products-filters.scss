@@ -1,3 +1,5 @@
+// Products filters, search, sort by, etc..
+
 .products-filters {
     padding: 1rem;
     margin-top: 2rem;
@@ -20,6 +22,8 @@
         flex-direction: column;
       }
 
+
+      // SORT BY
       > select {
         color: #838383;
         border: 2px solid $light-gray;
@@ -30,6 +34,7 @@
         transition: 0.2s ease-in-out;
       }
 
+      // SEARCH INPUT
       .search-input-box {
         border: 2px solid $light-gray;
         position: relative;
@@ -56,24 +61,6 @@
           left: 0.3rem;
           position: absolute;
           font-size: 1.3rem;
-        }
-      }
-
-      > input {
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
-        outline: none;
-        max-width: 800px;
-        width: 100%;
-        transition: 0.2s ease-in-out;
-
-        &::placeholder {
-          color: #c4c4c4;
-        }
-
-        &:focus {
-          transition: 0.2s ease-in-out;
-          border: 2px solid $lightblue;
         }
       }
 

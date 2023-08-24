@@ -1,3 +1,4 @@
+/*Main button mixin*/
 @mixin button-style-white($color) {
   cursor: pointer;
   padding: 0.5rem 1rem;
@@ -13,6 +14,11 @@
     transition: 0.2s ease-in-out;
   }
 }
+
+/*
+Transparent button mixin
+(usually used for buttons in headers with a background image)
+*/
 
 @mixin button-style-transparent($color,$hover-color) {
     cursor: pointer;
